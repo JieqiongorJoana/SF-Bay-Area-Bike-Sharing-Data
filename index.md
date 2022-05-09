@@ -39,6 +39,10 @@ Outliers in Duration
 Distribution of Trip Duration:
 ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
 
+Hourly_trips_across_the_days
+![Hourly_trips_across_the_days](https://user-images.githubusercontent.com/75310566/167509287-fc72584f-47b2-47b1-beeb-7f2781462141.png)
+
+
 ### Add time features
   Since the bike usage is very related with the breakdowns of the time we will add them as seperate features.
   Here we need to be aware of the cyclic nature of our time data and the non-linearity dependence between the bike rentals and the hours of the day.
