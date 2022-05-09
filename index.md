@@ -27,7 +27,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ### Stations departures count:
 Count the departures from each stations
-![Stations departures count](https://user-images.githubusercontent.com/75310566/167499297-176f21a2-4415-448a-ba36-f1c2ab9f3a30.png)
+![Stations departures count](https://user-images.githubusercontent.com/75310566/167501603-ffce12c0-d10d-449e-ae60-f5c329f081ea.png)
+
 
 
 
