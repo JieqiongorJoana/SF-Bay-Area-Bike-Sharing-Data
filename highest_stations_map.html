@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ffba539df4ee47e387d469c26d6ee1b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ffba539df4ee47e387d469c26d6ee1b3" ></div>
+        
+</body>
+<script>    
+    
+            var map_ffba539df4ee47e387d469c26d6ee1b3 = L.map(
+                "map_ffba539df4ee47e387d469c26d6ee1b3",
+                {
+                    center: [37.56236, -122.150876],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fed70dc73f9f42bebc7665c5a48e0213 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ffba539df4ee47e387d469c26d6ee1b3);
+        
+    
+            var marker_fdf6f1eeacd642c785eb6fbedc33e2b8 = L.marker(
+                [37.776617, -122.39526],
+                {}
+            ).addTo(map_ffba539df4ee47e387d469c26d6ee1b3);
+        
+    
+            var icon_006003e697cb4128be01c3e7f1e1d672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdf6f1eeacd642c785eb6fbedc33e2b8.setIcon(icon_006003e697cb4128be01c3e7f1e1d672);
+        
+    
+        var popup_65643408837d4a9ea3fdc69b6451b3bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b61af7791be4306b906af850040246b = $(`<div id="html_3b61af7791be4306b906af850040246b" style="width: 100.0%; height: 100.0%;">San Francisco Caltrain (Townsend at 4th)</div>`)[0];
+            popup_65643408837d4a9ea3fdc69b6451b3bc.setContent(html_3b61af7791be4306b906af850040246b);
+        
+
+        marker_fdf6f1eeacd642c785eb6fbedc33e2b8.bindPopup(popup_65643408837d4a9ea3fdc69b6451b3bc)
+        ;
+
+        
+    
+</script>
