@@ -1,4 +1,4 @@
-# SF-Bay-Area-Bike-Sharing-Data
+# 1. SF-Bay-Area-Bike-Sharing-Data
 
 ![CP255 Final Project presentation  pptx](https://user-images.githubusercontent.com/75310566/167366826-f1b6ded2-64aa-44ab-8418-66b390101fd5.jpg)
 
@@ -13,7 +13,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ### Method
 
 
-## Station and Trip Analysis
+## 2. Station and Trip Analysis
 
 ### Get Bike Station Data:
 ![station_df](https://user-images.githubusercontent.com/75310566/167487910-bf69cd70-b3e2-4b35-b933-26f3603ba586.png)
@@ -22,3 +22,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ### Bike Station Location Map:
 <iframe src="station_location.html" height="500" width="800"></iframe>
 
+## 3. Results
+
+
+## 4. Recommandation
