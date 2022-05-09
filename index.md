@@ -1,4 +1,4 @@
-## SF Bay Area Bike Sharing Data
+## Project Description
 
 You can use the [editor on GitHub](https://github.com/JieqiongorJoana/SF-Bay-Area-Bike-Sharing-Data/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
