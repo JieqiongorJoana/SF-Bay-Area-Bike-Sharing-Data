@@ -12,9 +12,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 
 ## Header 2
-### Net
-
-
-Bike Station Location Map:
+### Bike Station Location Map:
 <iframe src="station_location.html" height="500" width="800"></iframe>
 
