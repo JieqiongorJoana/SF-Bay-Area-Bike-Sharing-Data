@@ -10,8 +10,15 @@ What is the net change in the bike stock (bikes returned - bikes taken) at a spe
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+### Method
 
-## Header 2
+
+## Station and Trip Analysis
+
+### Get Bike Station Data:
+![station_df](https://user-images.githubusercontent.com/75310566/167487910-bf69cd70-b3e2-4b35-b933-26f3603ba586.png)
+
+
 ### Bike Station Location Map:
 <iframe src="station_location.html" height="500" width="800"></iframe>
 
