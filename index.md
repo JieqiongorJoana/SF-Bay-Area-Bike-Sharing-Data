@@ -39,9 +39,6 @@ Outliers in Duration
 Distribution of Trip Duration:
 ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
 
-Hourly_trips_across_the_days
-![Hourly_trips_across_the_days](https://user-images.githubusercontent.com/75310566/167509287-fc72584f-47b2-47b1-beeb-7f2781462141.png)
-
 
 ### Add time features
   Since the bike usage is very related with the breakdowns of the time we will add them as seperate features.
@@ -57,7 +54,8 @@ Daily
  ![Hourly_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png)
 
 
-
+Hourly_trips_across_the_days
+![Hourly_trips_across_the_days](https://user-images.githubusercontent.com/75310566/167509287-fc72584f-47b2-47b1-beeb-7f2781462141.png)
 
 ## 3. Results
 
