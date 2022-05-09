@@ -18,9 +18,15 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ### Get Bike Station Data:
 ![station_df](https://user-images.githubusercontent.com/75310566/167487910-bf69cd70-b3e2-4b35-b933-26f3603ba586.png)
 
+### Get Initial Trip Data:
+![trip_df_10](https://user-images.githubusercontent.com/75310566/167490631-35732ca3-2db7-49b3-8650-a3488ccf9d0d.png)
+
 
 ### Bike Station Location Map:
 <iframe src="station_location.html" height="500" width="800"></iframe>
+
+
+
 
 ## 3. Results
 
