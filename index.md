@@ -22,6 +22,5 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 
 Embedding station location map:
-
-<iframe src="station_location.html" height="500" width="500"></iframe>
+<iframe src="station_location.html" height="500" width="800"></iframe>
 
