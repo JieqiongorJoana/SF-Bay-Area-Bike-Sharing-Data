@@ -29,14 +29,14 @@ Interactive Plotting in Python(Plotly);APIs
 ![weather2](https://user-images.githubusercontent.com/75310566/167543490-8004ba4f-5492-42cc-bef7-6e756bc421ea.png)
 
 
-### Generate Bike Station Location Map:
+### Generate Bike Station Location Map
 <iframe src="station_location.html" height="500" width="800"></iframe>
 
-### Stations departures count:
+### Stations departures count
 Count the departures from each stations
 ![Stations departures count](https://user-images.githubusercontent.com/75310566/167501603-ffce12c0-d10d-449e-ae60-f5c329f081ea.png)
-
-The station that has the highest number of departures:
+In the stations departures count figure, it it obvious that some stations are very popular with many rents, while some have only few rents. Because of that in general bicycles at popular stations tend to be used significantly more often than bicycles at not popular stations.
+The map below shows the station that has the highest number of departures:
 <iframe src="highest_stations_map.html" height="500" width="800"></iframe>
 
 
