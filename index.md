@@ -153,12 +153,18 @@ Check the shape of  the dataframe
 We took last 10% of the sorted dataset as a hold-out set and use sklean TimeseriesSplit object for cross-validation 
 Set train as 90% dataset and test as 10% dataset. 
 
-X = station_hourly 
-Y = feature dataframe which is the weather and  time feature 
+  X = station_hourly 
+
+  Y = feature dataframe which is the weather and  time feature 
+
   Create the feature train datasets:X_train 
+  
   Create the features test datasets:X_test 
+  
   Create the targets train datasets:y_train 
+  
   Create the targets test datasets:y_test 
+  
   Result:
   - X_train shape: (15824, 71) X_test shape: (1759, 71)
   - y_train shape: (15824, 62) y_test shape: (1759, 62)
