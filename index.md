@@ -149,7 +149,7 @@ Check the shape of  the dataframe
 (17583, 62) 
 
 
-### Data split with timeseriesSplit 
+### Data split with timeseries Split 
 We took last 10% of the sorted dataset as a hold-out set and use sklean TimeseriesSplit object for cross-validation 
 Set train as 90% dataset and test as 10% dataset. 
 
