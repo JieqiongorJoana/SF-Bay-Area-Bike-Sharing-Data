@@ -157,13 +157,13 @@ Set train as 90% dataset and test as 10% dataset.
 
   Y = feature dataframe which is the weather and  time feature 
 
-  Create the feature train datasets:X_train 
+  Create the feature train datasets: X_train 
   
-  Create the features test datasets:X_test 
+  Create the features test datasets: X_test 
   
-  Create the targets train datasets:y_train 
+  Create the targets train datasets: y_train 
   
-  Create the targets test datasets:y_test 
+  Create the targets test datasets: y_test 
   
   Result:
   - X_train shape: (15824, 71) X_test shape: (1759, 71)
