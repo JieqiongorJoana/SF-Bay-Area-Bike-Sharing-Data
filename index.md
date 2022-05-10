@@ -102,6 +102,23 @@ We start modeling by with the targets in which the arrivals and departures are s
 The targets datasets will have the shape [n_hours, 2*n_stations] e.g, [,]
 For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. 
 
+Arrivals and departures hourly count
+  -Create departure columns names plus “d” stand for departures 
+  -Create arrival columns’ names plus”a” stand for arrivals.
+  -Then create arrival and departure dictionary 
+  -Add arrival list and departure list to station dataframe ( station matrix) 
+  -Combine trip data and station matrix into trips_extends 
+  -Assign 1 to the arrival column of the corresponding the start station on the same the row and same procedure is applied for the departure column also 
+  Now we have trip_extended dataframe whose rows contain every single trip information with a departure column and an arrival column encoded with
+   1. Because every single trip starts in a station and ends in a station
+![Modeling_trips_extended](https://user-images.githubusercontent.com/75310566/167579838-bbb0942f-5577-4b0a-a6b5-3050fca84bcb.png)
+
+Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
+![Modeling_trips_extended1](https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png)
+
+Create stations_hourly df by just taking the station column 
+![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167580378-275d178a-f085-4138-9de1-1350ebd0cbf7.png)
+
 
 
 ## 4. Recommandation
