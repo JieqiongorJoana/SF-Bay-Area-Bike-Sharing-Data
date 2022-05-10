@@ -47,7 +47,7 @@ Distribution of Trip Duration:
   Month(0-11) / Day (day of the week) / Hour(0-23) / Holiday (1 or 0)
  Monthly
 ![Monthly_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508766-a914bc79-343a-4359-9f96-d2db9f09d5e4.png)
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=40)
+![](https://user-images.githubusercontent.com/75310566/167508766-a914bc79-343a-4359-9f96-d2db9f09d5e4.png | width=40)
 
 Daily
 ![Daily_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508794-52dc3f05-f0cb-42e6-a16e-c88d490a8479.png)
