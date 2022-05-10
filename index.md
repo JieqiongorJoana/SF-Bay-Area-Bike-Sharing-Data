@@ -174,8 +174,8 @@ We will use the first 90% of the data for training and the remaining 10% for tes
     -- Using the Scikit-learn could easily create and train the model. We import the randomForestRegressor
      -- Takes X_train, y_train and a dictionary containing hyperparameter inputs for random forest, return the cross validation and X_train scores of the model. Both are calculated as root mean squared errors. 
 
-    -- Define a function to calculate the model performance and instantiate a random forestRegressor object by unpacking the parameters dictionary, then calculate the performance with cross-validation
-    -- (RMSE CV) Root-Mean-Square Error of Cross-Validation
+  -- Define a function to calculate the model performance and instantiate a random forestRegressor object by unpacking the parameters dictionary, then calculate the performance with cross-validation
+  -- (RMSE CV) Root-Mean-Square Error of Cross-Validation
 
     Conclusion two: The first model with initial parameters CV is 1.62 
     It already improved compared with baseline, the accuracy increased about 25%.
@@ -193,7 +193,7 @@ For regression trees the future importance is measured by how much each feature 
 
     Conclusion three: The second model with new parameters CV is 1.32
 
-Compare the scores before and after 
+### Compare the scores before and after: 
 
 Our first random forest model have the scores: 
   -- Cross-validation mean: 1.62 
