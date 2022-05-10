@@ -66,16 +66,13 @@ Distribution of Trip Duration:
   Here we need to be aware of the cyclic nature of our time data and the non-linearity dependence between the bike rentals and the hours of the day.
   Month(0-11) / Day (day of the week) / Hour(0-23) / Holiday (1 or 0)
  
- Monthly, daily, hourly trips charts
- Monthly
-<img src="https://user-images.githubusercontent.com/75310566/167508766-a914bc79-343a-4359-9f96-d2db9f09d5e4.png" width="300"> <img src="https://user-images.githubusercontent.com/75310566/167508766-a914bc79-343a-4359-9f96-d2db9f09d5e4.png" width="300">
-
-
+Daily, hourly trips charts
 Daily
 ![Daily_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508794-52dc3f05-f0cb-42e6-a16e-c88d490a8479.png)
 Bike usage decrease on fridays compare to other weekdays.
   
 Hourly
+
 <img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="300"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png)" width="300">
 
 Hourly_trips_across_the_days
