@@ -24,7 +24,9 @@ Interactive Plotting in Python(Plotly, folium);APIs
 ## 2. Data exploration
 
 ### Get Bike Station Data:
+Station_data includes location coordinates of bike stations and their id number. The total number of bike stations that will be the targets in the project is 34. 
 ![station_df](https://user-images.githubusercontent.com/75310566/167487910-bf69cd70-b3e2-4b35-b933-26f3603ba586.png)
+
 
 ### Get Initial Trip Data(Sample):
 ![trip_df_10](https://user-images.githubusercontent.com/75310566/167490631-35732ca3-2db7-49b3-8650-a3488ccf9d0d.png)
@@ -40,6 +42,7 @@ Weather Description column is categorical. We need to convert the categories int
 
 
 ### Generate Bike Station Location Map
+We use folium tools to create an interactive map in order to see the location of the bike station clearly. The marker clusters group points that overlap and then it labels the resulting circle with the number of points in that area. If you click on the circle, the map zooms to the area to show you the individual points. 
 <iframe src="station_location.html" height="500" width="800"></iframe>
 
 ### Stations departures count
