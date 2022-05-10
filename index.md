@@ -54,6 +54,7 @@ The map below shows the station that has the highest number of departures:
 
 
 Outliers in Duration
+We will take out the trips longer than two hours.
 ![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)
 
 
