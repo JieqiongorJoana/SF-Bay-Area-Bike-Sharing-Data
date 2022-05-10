@@ -13,13 +13,18 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ### Datasets:
 station_data_sf, trip_data_sf, weather data from kaggle
 
-## 2. Station and Trip Analysis
+## 2. Data exploration
 
 ### Get Bike Station Data:
 ![station_df](https://user-images.githubusercontent.com/75310566/167487910-bf69cd70-b3e2-4b35-b933-26f3603ba586.png)
 
 ### Get Initial Trip Data(Sample):
 ![trip_df_10](https://user-images.githubusercontent.com/75310566/167490631-35732ca3-2db7-49b3-8650-a3488ccf9d0d.png)
+
+### Weather Data:
+  The given weather dataset provides weather measurements with daily precision however we will make our analysis with samples that are in an hour   range. we will use the weather data taken from Kaggle Datasets (Historical Hourly Weather Data 2012-2017). San Francisco's hourly weather measurements data of various weather attributes, such as temperature, humidity, air pressure, etc. are provided.
+![weather](https://user-images.githubusercontent.com/75310566/167543483-8e3d9691-e776-4608-86f1-8af529a1e008.png)
+![weather2](https://user-images.githubusercontent.com/75310566/167543490-8004ba4f-5492-42cc-bef7-6e756bc421ea.png)
 
 
 ### Generate Bike Station Location Map:
