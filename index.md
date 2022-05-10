@@ -24,6 +24,7 @@ Interactive Plotting in Python(Plotly);APIs
 
 ### Weather Data:
   The given weather dataset provides weather measurements with daily precision however we will make our analysis with samples that are in an hour   range. we will use the weather data taken from Kaggle Datasets (Historical Hourly Weather Data 2012-2017). San Francisco's hourly weather measurements data of various weather attributes, such as temperature, humidity, air pressure, etc. are provided.
+  
 ![weather](https://user-images.githubusercontent.com/75310566/167543483-8e3d9691-e776-4608-86f1-8af529a1e008.png)
 ![weather2](https://user-images.githubusercontent.com/75310566/167543490-8004ba4f-5492-42cc-bef7-6e756bc421ea.png)
 
