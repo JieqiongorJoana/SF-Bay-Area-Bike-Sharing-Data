@@ -113,8 +113,8 @@ For each hour row, there will be columns with the count of departures from each 
    1. Because every single trip starts in a station and ends in a station
 ![Modeling_trips_extended](https://user-images.githubusercontent.com/75310566/167579838-bbb0942f-5577-4b0a-a6b5-3050fca84bcb.png)
 
-    Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
-    <img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
+  Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
+  <img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
 
 Create stations_hourly df by just taking the station column 
 
