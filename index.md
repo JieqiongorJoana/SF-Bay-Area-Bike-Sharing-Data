@@ -79,7 +79,7 @@ Bike usage decrease on Fridays compared to other weekdays.
   
 Hourly trips charts
 
-<img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="340"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="350">
+<img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="410"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="420">
 
 - Firstly, bike usage between 0h-4h is close to zero.
 - Subscriber usage is increasing after 5h and making first peak around 8h which is high probably due to commuting to work or schools.
@@ -109,4 +109,5 @@ For each hour row, there will be columns with the count of departures from each 
 ## References:
 https://hrngok.github.io/posts/bay_area%20bike%20data/
 https://github.com/pavelk2/Bay-Area-Bike-Share#stations-in-san-francisco
-
+https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share
+https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html
