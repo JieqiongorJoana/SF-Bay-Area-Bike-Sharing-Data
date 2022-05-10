@@ -8,6 +8,11 @@ Bike sharing programs usually have a problem of unbalanced stations where the nu
 ### Research Question
 What is the net change in the bike stock (bikes returned - bikes taken) at a specific station at a specific hour in San Francisco?
 
+### Variables:
+Bike Stations: Location, number;
+Trip: trip time, duration of trip;
+Weather: hourly main weather feature, categorical characters of weather, eg: Humidity, Temperature, Wind; 
+
 ### Datasets:
 station_data_sf, trip_data_sf, weather data from kaggle
 
@@ -23,9 +28,12 @@ Interactive Plotting in Python(Plotly);APIs
 ![trip_df_10](https://user-images.githubusercontent.com/75310566/167490631-35732ca3-2db7-49b3-8650-a3488ccf9d0d.png)
 
 ### Weather Data:
-  The given weather dataset provides weather measurements with daily precision however we will make our analysis with samples that are in an hour   range. we will use the weather data taken from Kaggle Datasets (Historical Hourly Weather Data 2012-2017). San Francisco's hourly weather measurements data of various weather attributes, such as temperature, humidity, air pressure, etc. are provided.
-  
+We made our analysis with samples that are in an hour range. So, we used the weather data taken from Kaggle Datasets (Historical Hourly Weather Data 2012-2017). San Francisco's hourly weather measurements data has various weather attributes, such as temperature, humidity, air pressure, etc. are provided.
+
+Since datasets are given by a common datetime column, we read all the datasets to create a weather dataset related to our are of interest.
 ![weather](https://user-images.githubusercontent.com/75310566/167543483-8e3d9691-e776-4608-86f1-8af529a1e008.png)
+
+Weather Description column is categorical. We need to convert the categories into dummy variables. 
 ![weather2](https://user-images.githubusercontent.com/75310566/167543490-8004ba4f-5492-42cc-bef7-6e756bc421ea.png)
 
 
@@ -35,7 +43,7 @@ Interactive Plotting in Python(Plotly);APIs
 ### Stations departures count
 Count the departures from each stations
 ![Stations departures count](https://user-images.githubusercontent.com/75310566/167501603-ffce12c0-d10d-449e-ae60-f5c329f081ea.png)
-In the stations departures count figure, it it obvious that some stations are very popular with many rents, while some have only few rents. Because of that in general bicycles at popular stations tend to be used significantly more often than bicycles at not popular stations.
+In the stations departures count figure, we see that some stations are very popular with many rents, while some have only few rents. Because of that in general bicycles at popular stations tend to be used significantly more often than bicycles at not popular stations.
 The map below shows the station that has the highest number of departures:
 <iframe src="highest_stations_map.html" height="500" width="800"></iframe>
 
