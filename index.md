@@ -1,5 +1,5 @@
 # SF-Bay-Area-Bike-Sharing-Data
-
+### By Chenlu Zhu, Jieqiong Yang
 ![CP255 Final Project presentation  pptx](https://user-images.githubusercontent.com/75310566/167366826-f1b6ded2-64aa-44ab-8418-66b390101fd5.jpg)
 
 ## 1. Project Description
