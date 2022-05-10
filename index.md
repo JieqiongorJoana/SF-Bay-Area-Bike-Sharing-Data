@@ -10,8 +10,8 @@ What is the net change in the bike stock (bikes returned - bikes taken) at a spe
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-### Method
-
+### Datasets:
+station_data_sf, trip_data_sf, weather data from kaggle
 
 ## 2. Station and Trip Analysis
 
