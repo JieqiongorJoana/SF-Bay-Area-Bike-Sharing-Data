@@ -34,7 +34,8 @@ The station that has the highest number of departures:
 
 
 Outliers in Duration
-![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)    ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
+![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)
+
 
 Distribution of Trip Duration:
 ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
@@ -46,6 +47,7 @@ Distribution of Trip Duration:
   Month(0-11) / Day (day of the week) / Hour(0-23) / Holiday (1 or 0)
  Monthly
 ![Monthly_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508766-a914bc79-343a-4359-9f96-d2db9f09d5e4.png)
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=40)
 
 Daily
 ![Daily_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508794-52dc3f05-f0cb-42e6-a16e-c88d490a8479.png)
