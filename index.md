@@ -79,7 +79,7 @@ Bike usage decrease on Fridays compared to other weekdays.
   
 Hourly trips charts
 
-<img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="395"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="405">
+<img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="400"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="410">
 
 - Firstly, bike usage between 0h-4h is close to zero.
 - Subscriber usage is increasing after 5h and making first peak around 8h which is high probably due to commuting to work or schools.
