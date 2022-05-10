@@ -166,10 +166,14 @@ The scores are both better and also this time it looks like it does not overfit.
     It’s a final test prediction performance. 
     Instantiate a RandomForestRegressor object with the best parameters of random search, fit the model and then predict. 
 Our test score improved to 1.28 from 1.32 CV mean. 
-    ### Conclusion four: The hold out test score is 1.28
+
+Conclusion four: The hold out test score is 1.28
 
 ### Net rates dataframe 
 Since we already obtained the differences of departures and arrivals for each hour, we could create a net rates dataframes. This dataframe clearly shows the net change of each station per hour. 
+
+
+    Conclusion Five: Our model performance decreased to 2.96 on prediction of the net rate change. 
 
 
 ![Cumulative Importances](https://user-images.githubusercontent.com/75310566/167588850-a3f32c32-c15f-41e0-ae51-1f5b02b07ceb.png)
