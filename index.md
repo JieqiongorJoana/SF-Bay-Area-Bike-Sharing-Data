@@ -34,7 +34,7 @@ The station that has the highest number of departures:
 
 
 Outliers in Duration
-![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)
+![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)    ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
 
 Distribution of Trip Duration:
 ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
