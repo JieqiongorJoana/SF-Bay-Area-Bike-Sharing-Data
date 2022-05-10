@@ -142,8 +142,8 @@ We will use the first 90% of the data for training and the remaining 10% for tes
     --Define a function to calculate the model performance and instantiate a random forestRegressor object by unpacking the parameters dictionary, then calculate the performance with cross-validation
     --(RMSE CV) Root-Mean-Square Error of Cross-Validation
 
-    ### Conclusion two: The first model with initial parameters CV is 1.62 
-    ### It already improved compared with baseline, the accuracy increased about 25%.
+    Conclusion two: The first model with initial parameters CV is 1.62 
+    It already improved compared with baseline, the accuracy increased about 25%.
 
 
 ### Feature Selection 
