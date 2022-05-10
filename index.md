@@ -19,7 +19,7 @@ Weather: hourly main weather feature, categorical characters of weather, eg: Hum
 station_data_sf, trip_data_sf, weather data from kaggle
 
 ### Methodology
-Interactive Plotting in Python(Plotly, folium);APIs
+Plotly, folium, MarkerCluster, pandas, RandomForestRegressor, Skicit-learn, Seaborn, Rfpimp.
 
 ## 2. Data exploration
 The first step is to explore the data in a spreadsheet program and load data into Jupyter notebooks, and then explore each column and rows, join it with other data sources, generate charts and interactive maps to learn about the data and basic information. 
