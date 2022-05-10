@@ -71,14 +71,22 @@ Distribution of Trip Duration:
 Daily trips charts
 
 ![Daily_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508794-52dc3f05-f0cb-42e6-a16e-c88d490a8479.png)
-Bike usage decrease on fridays compare to other weekdays.
+
+Bike usage decrease on Fridays compared to other weekdays.
   
 Hourly trips charts
 
 <img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="300"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="300">
 
+- Firstly, bike usage between 0h-4h is close to zero.
+- Subscriber usage is increasing after 5h and making first peak around 8h which is high probably due to commuting to work or schools.
+- The second peak is around 17h which is high probably due to commuting back from work or schools
+- It is intiutive that people who have a regular schedule prefer to subscribe to the system
+- However we will not use the subscriber type information in our model because when we want to predict future data of bike stock net change in the next hour at that moment we will not have the subscriber type data for the coming hour(s).
+
 Hourly_trips_across_the_days
 ![Hourly_trips_across_the_days](https://user-images.githubusercontent.com/75310566/167509287-fc72584f-47b2-47b1-beeb-7f2781462141.png)
+We can see the difference in the bike usage hours patterns of the weekdays and weekends
 
 ## 3. Modeling approach
 
