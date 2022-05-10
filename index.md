@@ -10,14 +10,16 @@ What is the net change in the bike stock (bikes returned - bikes taken) at a spe
 
 ### Variables:
 Bike Stations: Location, number;
+
 Trip: trip time, duration of trip;
+
 Weather: hourly main weather feature, categorical characters of weather, eg: Humidity, Temperature, Wind; 
 
 ### Datasets:
 station_data_sf, trip_data_sf, weather data from kaggle
 
 ### Methodology
-Interactive Plotting in Python(Plotly);APIs
+Interactive Plotting in Python(Plotly, folium);APIs
 
 ## 2. Data exploration
 
