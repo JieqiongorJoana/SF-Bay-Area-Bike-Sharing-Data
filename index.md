@@ -75,7 +75,7 @@ Daily trips charts
 
 ![Daily_weekdays_trips_subscribers](https://user-images.githubusercontent.com/75310566/167508794-52dc3f05-f0cb-42e6-a16e-c88d490a8479.png)
 
-Bike usage decrease on Fridays compared to other weekdays.
+--Bike usage decrease on Fridays compared to other weekdays.
   
 Hourly trips charts
 
@@ -113,8 +113,7 @@ For each hour row, there will be columns with the count of departures from each 
 ![Modeling_trips_extended](https://user-images.githubusercontent.com/75310566/167579838-bbb0942f-5577-4b0a-a6b5-3050fca84bcb.png)
 
 Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
-![Modeling_trips_extended1](https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png)
-
+<img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="600">
 Create stations_hourly df by just taking the station column 
 
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167580378-275d178a-f085-4138-9de1-1350ebd0cbf7.png)
