@@ -22,6 +22,7 @@ station_data_sf, trip_data_sf, weather data from kaggle
 Interactive Plotting in Python(Plotly, folium);APIs
 
 ## 2. Data exploration
+The first step is to explore the data in a spreadsheet program and load data into Jupyter notebooks, and then explore each column and rows, join it with other data sources, generate charts and interactive maps to learn about the data and basic information. 
 
 ### Get Bike Station Data:
 Station_data includes location coordinates of bike stations and their id number. The total number of bike stations that will be the targets in the project is 34. 
@@ -80,7 +81,17 @@ Hourly trips charts
 Hourly_trips_across_the_days
 ![Hourly_trips_across_the_days](https://user-images.githubusercontent.com/75310566/167509287-fc72584f-47b2-47b1-beeb-7f2781462141.png)
 
-## 3. Results
+## 3. Modeling approach
+
+### Goal
+Predict the hourly net change in the bike stock in each station.
+
+### Steps
+1)Targets dataset with 68 columns 
+We start modeling by with the targets in which the arrivals and departures are separated.
+The targets datasets will have the shape [n_hours, 2*n_stations] e.g, [,]
+For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. 
+
 
 
 ## 4. Recommandation
