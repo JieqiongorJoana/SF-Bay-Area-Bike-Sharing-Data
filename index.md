@@ -96,13 +96,12 @@ We can see the difference in the bike usage hours patterns of the weekdays and w
 ### Goal
 Predict the hourly net change in the bike stock in each station.
 
-### Steps
-1)Targets dataset with 68 columns 
+### Targets dataset with 68 columns 
 We start modeling by with the targets in which the arrivals and departures are separated.
 The targets datasets will have the shape [n_hours, 2*n_stations] e.g, [,]
 For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. 
 
-Arrivals and departures hourly count
+### Arrivals and departures hourly count
   -Create departure columns names plus “d” stand for departures 
   -Create arrival columns’ names plus”a” stand for arrivals.
   -Then create arrival and departure dictionary 
@@ -117,8 +116,19 @@ Resample trip_extended dataframe hourly and count the arrivals and departures (m
 ![Modeling_trips_extended1](https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png)
 
 Create stations_hourly df by just taking the station column 
+
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167580378-275d178a-f085-4138-9de1-1350ebd0cbf7.png)
 
+This table clearly show, in every hour, how many bike arrival and departure happened in each station.
+
+### Data split with timeseriesSplit 
+We took last 10% of the sorted dataset as a hold-out set and use sklean TimeseriesSplit object for cross-validation 
+Set train as 90% dataset and test as 10% dataset. 
+
+## Model with 68 stations 
+### Setting the first baseline for the model 
+In this model a target corresponding to a features sample will be a point with the permutations of 68 stations. 
+Before we make and evaluate the predictions, we need to establish a baseline, which is the measure we want our model to be compared to. If our model does not improve on the baseline, it will fail. The baseline prediction for our case could be hourly arrivals and departures. In other words, our baseline is the error we would get if we just predicted the average hourly arrivals and departures. 
 
 
 ## 4. Recommandation
