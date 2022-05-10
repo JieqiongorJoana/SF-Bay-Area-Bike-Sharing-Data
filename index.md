@@ -177,10 +177,6 @@ Since we already obtained the differences of departures and arrivals for each ho
     Conclusion Five: Our model performance decreased to 2.96 on prediction of the net rate change. 
 
 
-![Cumulative Importances](https://user-images.githubusercontent.com/75310566/167588850-a3f32c32-c15f-41e0-ae51-1f5b02b07ceb.png)
-
-
-
 ## 4. Key findings
 ### Performance analysis 
 Model with 62 column targets --The model with 62 targets column performance on predicting the arrivals and departures. 
