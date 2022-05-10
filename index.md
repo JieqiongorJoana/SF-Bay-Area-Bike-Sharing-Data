@@ -117,8 +117,8 @@ Predict the hourly net change in the bike stock in each station.
 
 ### Targets dataset with 62 columns 
 We start modeling by with the targets in which the arrivals and departures are separated.
-The targets datasets will have the shape [n_hours, 2*n_stations].
-For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. 
+
+The targets datasets will have the shape [n_hours, 2*n_stations]. For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. There are 34 stations, but 3 of them were removed. So, we modeled with 31 bike stations. 
 
 ### Arrivals and departures hourly count
   - Create departure columns names plus “d” stand for departures 
