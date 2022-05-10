@@ -26,6 +26,7 @@ The first step is to explore the data in a spreadsheet program and load data int
 
 ### Get Bike Station Data:
 Station_data includes location coordinates of bike stations and their id number. The total number of bike stations that will be the targets in the project is 34. 
+
 ![station_df](https://user-images.githubusercontent.com/75310566/167487910-bf69cd70-b3e2-4b35-b933-26f3603ba586.png)
 
 
@@ -114,6 +115,7 @@ For each hour row, there will be columns with the count of departures from each 
 
 Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
 <img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
+
 Create stations_hourly df by just taking the station column 
 
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167580378-275d178a-f085-4138-9de1-1350ebd0cbf7.png)
@@ -144,6 +146,7 @@ We will use the first 90% of the data for training and the remaining 10% for tes
 ### Feature Selection 
 Feature selection is able to remove the irrelevant features and enhance the accuracy of the model. 
 For regression trees the future importance is measured by how much each feature reduces the variance when they split the data.
+
 ![importance_sorted](https://user-images.githubusercontent.com/75310566/167590514-c7814748-40b9-4b69-81c1-ef720156ec8e.png)
 
 ### Hyperparameters tuning 
