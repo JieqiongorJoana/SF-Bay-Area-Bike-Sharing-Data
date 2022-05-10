@@ -113,7 +113,7 @@ For each hour row, there will be columns with the count of departures from each 
 ![Modeling_trips_extended](https://user-images.githubusercontent.com/75310566/167579838-bbb0942f-5577-4b0a-a6b5-3050fca84bcb.png)
 
 Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
-<img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="600">
+<img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
 Create stations_hourly df by just taking the station column 
 
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167580378-275d178a-f085-4138-9de1-1350ebd0cbf7.png)
@@ -128,6 +128,7 @@ Set train as 90% dataset and test as 10% dataset.
 ### Setting the first baseline for the model 
 In this model a target corresponding to a features sample will be a point with the permutations of 68 stations. 
 Before we make and evaluate the predictions, we need to establish a baseline, which is the measure we want our model to be compared to. If our model does not improve on the baseline, it will fail. The baseline prediction for our case could be hourly arrivals and departures. In other words, our baseline is the error we would get if we just predicted the average hourly arrivals and departures. 
+
 
 
 ## 4. Recommandation
