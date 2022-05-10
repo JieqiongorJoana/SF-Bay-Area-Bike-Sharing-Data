@@ -165,7 +165,7 @@ Set train as 90% dataset and test as 10% dataset.
   
   Create the targets test datasets: y_test 
   
-  Result:
+  Results:
   - X_train shape: (15824, 71) X_test shape: (1759, 71)
   - y_train shape: (15824, 62) y_test shape: (1759, 62)
   15824 = 90% 1759 = 10% 
