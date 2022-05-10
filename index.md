@@ -8,10 +8,11 @@ Bike sharing programs usually have a problem of unbalanced stations where the nu
 ### Research Question
 What is the net change in the bike stock (bikes returned - bikes taken) at a specific station at a specific hour in San Francisco?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ### Datasets:
 station_data_sf, trip_data_sf, weather data from kaggle
+
+### Methodology
+
 
 ## 2. Data exploration
 
