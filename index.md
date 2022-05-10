@@ -12,7 +12,7 @@ What is the net change in the bike stock (bikes returned - bikes taken) at a spe
 station_data_sf, trip_data_sf, weather data from kaggle
 
 ### Methodology
-
+Interactive Plotting in Python(Plotly);APIs
 
 ## 2. Data exploration
 
