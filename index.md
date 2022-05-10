@@ -218,6 +218,8 @@ RMSE of the predicted net changes and the actual net changes
 We can make the final evaluation of our 62 stations approach by finding the RMSE of the prediction of net change and actual net change. 
 Predicted net changes data: 
 
+![predict_net_change](https://user-images.githubusercontent.com/75310566/167711159-cf5e6037-4c83-4e7e-816d-70ee21fd169c.png)
+
 
     Conclusion Five: Our model performance decreased to 2.96 on prediction of the net rate change. 
 
