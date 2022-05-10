@@ -55,7 +55,8 @@ The map below shows the station that has the highest number of departures:
 
 ### Add time features
 ### Trip Duration
- Firstly, we calculate the difference between start date time and end data time to obtain the duration of each trip and add a "duration" column into the trip dataframe. We use violin Box Plot, a figure and two axes for boxplot and distplot to show a process of analysis of the distribution of duration. The Duration aixes use seconds as units and from the plot, we will find that most of the trips are less than half hour 
+Firstly, we calculate the difference between start date time and end data time to obtain the duration of each trip and add a "duration" column into the trip dataframe. We use violin Box Plot, a figure and two axes for boxplot and distplot to show a process of analysis of the distribution of duration. The Duration aixes use seconds as units and from the plot, we found that most of the trips are less than half hour. Potential reason is that users can make an unlimited number of trips, with trips under thirty minutes in length having no additional charge; longer trips will incur overtime fees.
+
 Outliers in Duration
 We will take out the trips longer than two hours.
 ![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)
