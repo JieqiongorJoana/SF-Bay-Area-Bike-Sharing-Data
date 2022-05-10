@@ -196,11 +196,15 @@ For regression trees the future importance is measured by how much each feature 
 ### Compare the scores before and after: 
 
 Our first random forest model have the scores: 
+  
   -- Cross-validation mean: 1.62 
+  
   -- RMSE Train: 1.57 
 
 After applying the parameters of randomized search the scores becomes: 
+  
   --Cross-validation mean: 1.32
+  
   --RMSE Train：1.12
   
 The scores are both better and also this time it looks like it does not overfit. 
