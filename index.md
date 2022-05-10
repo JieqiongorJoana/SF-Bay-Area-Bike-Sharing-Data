@@ -106,11 +106,18 @@ We can see the difference in the bike usage hours patterns of the weekdays and w
 ### Goal
 Predict the hourly net change in the bike stock in each station.
 
-
+### Question
+  How should we represent the target datasets?
+  
+### Solution
+  A matrix of hours and arrivals and departures for each station separately 
+  
+### Advantage
+  Taking the arrivals and departure differences offsets the additional information related to each station. 
 
 ### Targets dataset with 62 columns 
 We start modeling by with the targets in which the arrivals and departures are separated.
-The targets datasets will have the shape [n_hours, 2*n_stations] e.g, [,]
+The targets datasets will have the shape [n_hours, 2*n_stations].
 For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. 
 
 ### Arrivals and departures hourly count
@@ -119,28 +126,43 @@ For each hour row, there will be columns with the count of departures from each 
   -Then create arrival and departure dictionary 
   -Add arrival list and departure list to station dataframe ( station matrix) 
   -Combine trip data and station matrix into trips_extends 
-  -Assign 1 to the arrival column of the corresponding the start station on the same the row and same procedure is applied for the departure column also 
-  Now we have trip_extended dataframe whose rows contain every single trip information with a departure column and an arrival column encoded with
-   1. Because every single trip starts in a station and ends in a station
+  -Assign 1 to the arrival column of the corresponding the start station on the same the row and same procedure is applied for the departure column.
+  
+Now we have trip_extended dataframe whose rows contain every single trip information with a departure column and an arrival column encoded with 1. That is because every single trip starts in a station and ends in a station
 ![Modeling_trips_extended](https://user-images.githubusercontent.com/75310566/167579838-bbb0942f-5577-4b0a-a6b5-3050fca84bcb.png)
 
   Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
   
-  <img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
+  <img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">  50d as a example 
 
 Create stations_hourly df by just taking the station column 
 
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167580378-275d178a-f085-4138-9de1-1350ebd0cbf7.png)
 
 This table clearly show, in every hour, how many bike arrival and departure happened in each station.
+Check the shape of  the dataframe 
+(17583, 62) 
+
 
 ### Data split with timeseriesSplit 
 We took last 10% of the sorted dataset as a hold-out set and use sklean TimeseriesSplit object for cross-validation 
 Set train as 90% dataset and test as 10% dataset. 
 
-## Model with 68 stations 
+X = station_hourly 
+Y = feature dataframe which is the weather and  time feature 
+  Create the feature train datasets:X_train 
+  Create the features test datasets:X_test 
+  Create the targets train datasets:y_train 
+  Create the targets test datasets:y_test 
+  Result:
+  - X_train shape: (15824, 71) X_test shape: (1759, 71)
+  - y_train shape: (15824, 62) y_test shape: (1759, 62)
+  15824 = 90% 1759 = 10% 
+
+
+## Model with 62 stations 
 ### Setting the first baseline for the model 
-In this model a target corresponding to a features sample will be a point with the permutations of 68 stations. 
+In this model a target corresponding to a features sample will be a point with the permutations of 62 stations. 
 Before we make and evaluate the predictions, we need to establish a baseline, which is the measure we want our model to be compared to. If our model does not improve on the baseline, it will fail. The baseline prediction for our case could be hourly arrivals and departures. In other words, our baseline is the error we would get if we just predicted the average hourly arrivals and departures. 
 Before we make and evaluate the predictions, we need to establish a baseline, which is the measure we want our model to be compared to. If our model does not improve on the baseline, it will fail. The baseline prediction for our case could be hourly arrivals and departures. In other words, our baseline is the error we would get if we just predicted the average hourly arrivals and departures. 
 
@@ -149,12 +171,15 @@ Before we make and evaluate the predictions, we need to establish a baseline, wh
 ### Training the first model
 Use random forest implementation from Sklearn 
 We will use the first 90% of the data for training and the remaining 10% for testing. 
-    --Using the Scikit-learn could easily create and train the model. We import the randomForestRegressor 
-    --Define a function to calculate the model performance and instantiate a random forestRegressor object by unpacking the parameters dictionary, then calculate the performance with cross-validation
-    --(RMSE CV) Root-Mean-Square Error of Cross-Validation
+    -- Using the Scikit-learn could easily create and train the model. We import the randomForestRegressor
+     -- Takes X_train, y_train and a dictionary containing hyperparameter inputs for random forest, return the cross validation and X_train scores of the model. Both are calculated as root mean squared errors. 
+
+    -- Define a function to calculate the model performance and instantiate a random forestRegressor object by unpacking the parameters dictionary, then calculate the performance with cross-validation
+    -- (RMSE CV) Root-Mean-Square Error of Cross-Validation
 
     Conclusion two: The first model with initial parameters CV is 1.62 
     It already improved compared with baseline, the accuracy increased about 25%.
+We tried to use this scores as a baseline2 and continue to improve our model with 2 method: feature selection and Hyperparameters tuning 
 
 
 ### Feature Selection 
@@ -188,6 +213,11 @@ Our test score improved to 1.28 from 1.32 CV mean.
 Since we already obtained the differences of departures and arrivals for each hour, we could create a net rates dataframes. This dataframe clearly shows the net change of each station per hour. 
 
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167594001-af1fa51f-6713-4ceb-a45e-51a0a23e060b.png)
+
+RMSE of the predicted net changes and the actual net changes 
+We can make the final evaluation of our 62 stations approach by finding the RMSE of the prediction of net change and actual net change. 
+Predicted net changes data: 
+
 
     Conclusion Five: Our model performance decreased to 2.96 on prediction of the net rate change. 
 
