@@ -150,7 +150,7 @@ For regression trees the future importance is measured by how much each feature 
 ![importance_sorted](https://user-images.githubusercontent.com/75310566/167590514-c7814748-40b9-4b69-81c1-ef720156ec8e.png)
 
 ### Hyperparameters tuning 
---Evaluate random search results 
+-- Evaluate random search results 
 Conclusion three: The second model with new parameters CV is 1.32
 
 Compare the scores before and after 
@@ -167,7 +167,7 @@ The scores are both better and also this time it looks like it does not overfit.
     Instantiate a RandomForestRegressor object with the best parameters of random search, fit the model and then predict. 
 Our test score improved to 1.28 from 1.32 CV mean. 
 
-Conclusion four: The hold out test score is 1.28
+    Conclusion four: The hold out test score is 1.28
 
 ### Net rates dataframe 
 Since we already obtained the differences of departures and arrivals for each hour, we could create a net rates dataframes. This dataframe clearly shows the net change of each station per hour. 
