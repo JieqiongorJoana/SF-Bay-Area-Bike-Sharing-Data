@@ -128,6 +128,47 @@ Set train as 90% dataset and test as 10% dataset.
 ### Setting the first baseline for the model 
 In this model a target corresponding to a features sample will be a point with the permutations of 68 stations. 
 Before we make and evaluate the predictions, we need to establish a baseline, which is the measure we want our model to be compared to. If our model does not improve on the baseline, it will fail. The baseline prediction for our case could be hourly arrivals and departures. In other words, our baseline is the error we would get if we just predicted the average hourly arrivals and departures. 
+Before we make and evaluate the predictions, we need to establish a baseline, which is the measure we want our model to be compared to. If our model does not improve on the baseline, it will fail. The baseline prediction for our case could be hourly arrivals and departures. In other words, our baseline is the error we would get if we just predicted the average hourly arrivals and departures. 
+    ### Conclusion one: The baseline estimates (2.12) arrivals or departures per hour. 
+
+### Training the first model
+Use random forest implementation from Sklearn 
+We will use the first 90% of the data for training and the remaining 10% for testing. 
+    --Using the Scikit-learn could easily create and train the model. We import the randomForestRegressor 
+    --Define a function to calculate the model performance and instantiate a random forestRegressor object by unpacking the parameters dictionary, then calculate the performance with cross-validation
+    --(RMSE CV) Root-Mean-Square Error of Cross-Validation
+      ### Conclusion two: The first model with initial parameters CV is 1.62 
+      ### It already improved compared with baseline, the accuracy increased about 25%. 
+
+
+### Feature Selection 
+Feature selection is able to remove the irrelevant features and enhance the accuracy of the model. 
+For regression trees the future importance is measured by how much each feature reduces the variance when they split the data.
+![importance_sorted](https://user-images.githubusercontent.com/75310566/167590514-c7814748-40b9-4b69-81c1-ef720156ec8e.png)
+
+### Hyperparameters tuning 
+    --Evaluate random search results 
+    ### Conclusion three: The second model with new parameters CV is 1.32
+Compare the scores before and after 
+ Our first random forest model have the scores:
+    -- Cross-validation mean: 1.62 
+    -- RMSE Train: 1.57 
+After applying the parameters of randomized search the scores becomes: 
+    --Cross-validation mean: 1.32
+    --RMSE Train：1.12
+The scores are both better and also this time it looks like it does not overfit. 
+
+### Hold-out set score
+    It’s a final test prediction performance. 
+    Instantiate a RandomForestRegressor object with the best parameters of random search, fit the model and then predict. 
+Our test score improved to 1.28 from 1.32 CV mean. 
+    ### Conclusion four: The hold out test score is 1.28
+
+### Net rates dataframe 
+Since we already obtained the differences of departures and arrivals for each hour, we could create a net rates dataframes. This dataframe clearly shows the net change of each station per hour. 
+
+
+![Cumulative Importances](https://user-images.githubusercontent.com/75310566/167588850-a3f32c32-c15f-41e0-ae51-1f5b02b07ceb.png)
 
 
 
