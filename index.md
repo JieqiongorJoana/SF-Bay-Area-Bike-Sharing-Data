@@ -172,6 +172,7 @@ Conclusion four: The hold out test score is 1.28
 ### Net rates dataframe 
 Since we already obtained the differences of departures and arrivals for each hour, we could create a net rates dataframes. This dataframe clearly shows the net change of each station per hour. 
 
+![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167594001-af1fa51f-6713-4ceb-a45e-51a0a23e060b.png)
 
     Conclusion Five: Our model performance decreased to 2.96 on prediction of the net rate change. 
 
@@ -180,7 +181,10 @@ Since we already obtained the differences of departures and arrivals for each ho
 
 
 
-## 4. Recommandation
+## 4. Key findings
+### Performance analysis 
+Model with 62 column targets --The model with 62 targets column performance on predicting the arrivals and departures. 
+![conclusion](https://user-images.githubusercontent.com/75310566/167594355-68109152-8376-45a0-bc69-35c7d9ea9d8c.png)
 
 ## References:
 https://hrngok.github.io/posts/bay_area%20bike%20data/
