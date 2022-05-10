@@ -232,6 +232,9 @@ Model with 62 column targets --The model with 62 targets column performance on p
 
 ## References:
 https://hrngok.github.io/posts/bay_area%20bike%20data/
+
 https://github.com/pavelk2/Bay-Area-Bike-Share#stations-in-san-francisco
+
 https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share
+
 https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html
