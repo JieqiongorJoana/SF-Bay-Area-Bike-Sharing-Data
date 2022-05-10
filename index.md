@@ -68,3 +68,8 @@ Hourly_trips_across_the_days
 
 
 ## 4. Recommandation
+
+## References:
+https://hrngok.github.io/posts/bay_area%20bike%20data/
+https://github.com/pavelk2/Bay-Area-Bike-Share#stations-in-san-francisco
+
