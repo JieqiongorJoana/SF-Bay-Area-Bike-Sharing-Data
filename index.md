@@ -107,7 +107,8 @@ We can see the difference in the bike usage hours patterns of the weekdays and w
 Predict the hourly net change in the bike stock in each station.
 
 
-### Targets dataset with 68 columns 
+
+### Targets dataset with 62 columns 
 We start modeling by with the targets in which the arrivals and departures are separated.
 The targets datasets will have the shape [n_hours, 2*n_stations] e.g, [,]
 For each hour row, there will be columns with the count of departures from each station and the count of arrivals to each station. 
