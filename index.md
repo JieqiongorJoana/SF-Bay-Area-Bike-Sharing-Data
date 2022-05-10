@@ -214,7 +214,7 @@ Since we already obtained the differences of departures and arrivals for each ho
 
 ![Modeling_trips_extended2](https://user-images.githubusercontent.com/75310566/167594001-af1fa51f-6713-4ceb-a45e-51a0a23e060b.png)
 
-RMSE of the predicted net changes and the actual net changes 
+RMSE of the predicted net changes: 
 We can make the final evaluation of our 62 stations approach by finding the RMSE of the prediction of net change and actual net change. 
 Predicted net changes data: 
 
