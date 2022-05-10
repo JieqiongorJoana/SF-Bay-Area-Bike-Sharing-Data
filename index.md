@@ -53,7 +53,9 @@ In the stations departures count figure, we see that some stations are very popu
 The map below shows the station that has the highest number of departures:
 <iframe src="highest_stations_map.html" height="500" width="800"></iframe>
 
-
+### Add time features
+### Trip Duration
+ Firstly, we calculate the difference between start date time and end data time to obtain the duration of each trip and add a "duration" column into the trip dataframe. We use violin Box Plot, a figure and two axes for boxplot and distplot to show a process of analysis of the distribution of duration. The Duration aixes use seconds as units and from the plot, we will find that most of the trips are less than half hour 
 Outliers in Duration
 We will take out the trips longer than two hours.
 ![Outliers_in_Duration](https://user-images.githubusercontent.com/75310566/167503746-ff9d0912-087b-4fbc-89ef-3003b1f8f204.png)
@@ -63,7 +65,7 @@ Distribution of Trip Duration:
 ![Density_Duration](https://user-images.githubusercontent.com/75310566/167503972-81455695-115c-47bc-9270-088070f785df.png)
 
 
-### Add time features
+### Trip Time
   Since the bike usage is very related with the breakdowns of the time we will add them as seperate features.
   Here we need to be aware of the cyclic nature of our time data and the non-linearity dependence between the bike rentals and the hours of the day.
   Month(0-11) / Day (day of the week) / Hour(0-23) / Holiday (1 or 0)
@@ -76,7 +78,7 @@ Bike usage decrease on Fridays compared to other weekdays.
   
 Hourly trips charts
 
-<img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="350"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="350">
+<img src="https://user-images.githubusercontent.com/75310566/167508872-1b3ea0bf-7dad-47b0-9895-5aec20ee6034.png" width="340"> <img src="https://user-images.githubusercontent.com/75310566/167563253-6f954003-0511-4631-9dcb-588526f53277.png" width="350">
 
 - Firstly, bike usage between 0h-4h is close to zero.
 - Subscriber usage is increasing after 5h and making first peak around 8h which is high probably due to commuting to work or schools.
