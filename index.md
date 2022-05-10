@@ -113,8 +113,8 @@ For each hour row, there will be columns with the count of departures from each 
    1. Because every single trip starts in a station and ends in a station
 ![Modeling_trips_extended](https://user-images.githubusercontent.com/75310566/167579838-bbb0942f-5577-4b0a-a6b5-3050fca84bcb.png)
 
-Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
-<img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
+    Resample trip_extended dataframe hourly and count the arrivals and departures (minimize the row number and keep every hour into index) 
+    <img src="https://user-images.githubusercontent.com/75310566/167580132-ca85b490-faa2-40e0-b6dd-53a8dbe60d02.png" width="400">
 
 Create stations_hourly df by just taking the station column 
 
@@ -150,12 +150,13 @@ For regression trees the future importance is measured by how much each feature 
 ![importance_sorted](https://user-images.githubusercontent.com/75310566/167590514-c7814748-40b9-4b69-81c1-ef720156ec8e.png)
 
 ### Hyperparameters tuning 
-    --Evaluate random search results 
-    ### Conclusion three: The second model with new parameters CV is 1.32
+--Evaluate random search results 
+Conclusion three: The second model with new parameters CV is 1.32
+
 Compare the scores before and after 
  Our first random forest model have the scores:
-    -- Cross-validation mean: 1.62 
-    -- RMSE Train: 1.57 
+-- Cross-validation mean: 1.62 
+-- RMSE Train: 1.57 
 After applying the parameters of randomized search the scores becomes: 
     --Cross-validation mean: 1.32
     --RMSE Train：1.12
